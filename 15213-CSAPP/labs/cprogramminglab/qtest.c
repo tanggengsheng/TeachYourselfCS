@@ -446,7 +446,12 @@ bool do_show(int argc, char *argv[]) {
     return show_queue(0);
 }
 
-static void queue_init() {
+/**
+ * Add the `void` prototype to avoid the following compile error:
+ * error: a function declaration without a prototype is deprecated in all
+ * versions of C [-Werror,-Wstrict-prototypes]
+ */
+static void queue_init(void) {
     fail_count = 0;
     q = NULL;
 }
