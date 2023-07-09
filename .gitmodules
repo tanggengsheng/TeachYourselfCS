@@ -1,0 +1,3 @@
+[submodule "cs61b-sp21"]
+	path = cs61b-sp21
+	url = git@github.com:Berkeley-CS61B/skeleton-sp21.git
